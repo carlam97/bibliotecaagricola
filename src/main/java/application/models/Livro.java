@@ -1,4 +1,5 @@
 package application.models;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -11,6 +12,7 @@ import javax.persistence.Table;
 public class Livro{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     private int id;
     private String titulo;
 
@@ -25,9 +27,4 @@ public class Livro{
     }public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
-
-    
-
-    
-
 }
