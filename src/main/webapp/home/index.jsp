@@ -1,4 +1,4 @@
-<@ page language="java" contentType="text/html" charset="UTF-8" pageEncondig="UTF-8" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 
 <!DOCTYPE html>
 <html>
@@ -7,6 +7,6 @@
         <title>Exemplo de Visão - View</title>
     </head>
     <body>
-        <h1> Lista de livros agrícolas - biblioteca da Fatec Pompeia</h1>
+        <h1> Carla Martins - Lista de livros agrícolas - biblioteca da Fatec Pompeia</h1>
     </body>
 </html>
