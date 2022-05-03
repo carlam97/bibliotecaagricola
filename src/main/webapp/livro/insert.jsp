@@ -12,10 +12,28 @@
             <h1>Novo Livro</h1>
             <hr />
             <form action="insert" method="post">
+
                 <div class="form-group">
-                    <label for="nome">Nome:</label>
-                    <input type="text" name="nome" class="form-control" />
+                    <label for="titulo">Título:</label>
+                    <input type="text" name="titulo" class="form-control" />
                 </div>
+                <div class="form-group">
+                    <label for="genero">Gênero:</label>
+                    <select name="genero" class="form-select">
+                        <c:forEach var="g" items="${generos}">
+                            <option value="${g.id}">${g.nome}</option>
+                        </c:forEach>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="autor">Autor:</label>
+                    <select name="autor" class="form-select">
+                        <c:forEach var="a" items="${autores}">
+                            <option value="${a.id}">${a.nome}</option>
+                        </c:forEach>
+                    </select>
+                </div>
+
                 <hr />
                 <a href="/livro/list" class="btn btn-primary">Voltar</a>
                 <input type="submit" value="Salvar" class="btn btn-success" />
